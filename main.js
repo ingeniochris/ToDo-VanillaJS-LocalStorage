@@ -26,9 +26,9 @@ const getList = () => {
   } else {
     arrayToDo.forEach(item => {
       if (!item.status) {
-        list_UI.innerHTML += `<div class="alert alert-danger"><i class="material-icons float-left mx-2">work</i><b>${item.activity}</b> - ${item.status}<span class="float-right"><i class="material-icons mx-2" style="cursor: pointer;" >done</i><i class="material-icons" style="cursor: pointer;">delete</i></span></div>`;
+        list_UI.innerHTML += `<div class="alert alert-danger"><i class="material-icons float-left mx-2">sentiment_very_dissatisfied</i><b>${item.activity}</b><span class="float-right"><i class="material-icons mx-2" style="cursor: pointer;" >done</i><i class="material-icons" style="cursor: pointer;">delete</i></span></div>`;
       } else {
-      list_UI.innerHTML += `<div class="alert alert-success"><i class="material-icons float-left mx-2">work</i><b>${item.activity}</b> - ${item.status}<span class="float-right"><i class="material-icons mx-2" style="cursor: pointer;" >done</i><i class="material-icons" style="cursor: pointer;">delete</i></span></div>`;
+      list_UI.innerHTML += `<div class="alert alert-success"><i class="material-icons float-left mx-2">sentiment_very_satisfied</i><b>${item.activity}</b><span class="float-right"><i class="material-icons mx-2" style="cursor: pointer;" >done</i><i class="material-icons" style="cursor: pointer;">delete</i></span></div>`;
       }
     });
   }
